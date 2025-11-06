@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- LEFT: IMAGE GALLERY -->
+    <div class="gallery">
+      <div class="img-container">
+        <img src="./Assets/shopping.webp" class="main-img" id="mainImg" alt="Main Product">
+      </div>
+      <div class="thumbnails">
+        <img src="./Assets/shopping (1).webp" alt="Thumb 1">
+        <img src="./Assets/shopping (2).webp" alt="Thumb 2">
+        <img src="./Assets/shopping (3).webp" alt="Thumb 3">
+      </div>
+    </div>
+
+    <!-- RIGHT: DETAILS -->
+    <div class="details">
+      <h1>Classic Denim Jacket</h1>
+      <p class="price">₹999.00</p>
+      <p class="color">Colour: Blue</p>
+
+      <div class="size">
+        <label>Size:</label>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+      </div>
+
+      <div>
+        <button class="btn">Add to Cart</button>
+        <button class="btn">Size Chart</button>
+        <button class="btn">Compare Colours</button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="active" data-tab="desc">Description</button>
+          <button data-tab="info">Product Info</button>
+          <button data-tab="ship">Shipping</button>
+        </div>
+
+        <div id="desc" class="tab-content active">
+          <p>This denim jacket is crafted from high-quality cotton fabric, offering comfort and durability for everyday wear.</p>
+        </div>
+        <div id="info" class="tab-content">
+          <p>Material: 100% Cotton<br>Made in India<br>Care: Machine wash cold</p>
+        </div>
+        <div id="ship" class="tab-content">
+          <p>Free shipping on orders above ₹499.<br>Delivery within 4–7 business days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RELATED PRODUCTS -->
+  <h2>Related Products</h2>
+  <div class="related">
+    <div class="related-item">
+      <img src="./Assets/jeans.jpg" alt="Related 1">
+      <p>Blue Jeans</p>
+    </div>
+    <div class="related-item">
+      <img src="./Assets/T shirt.webp" alt="Related 2">
+      <p>White T-Shirt</p>
+    </div>
+    <div class="related-item">
+      <img src="./Assets/Sneakers.webp" alt="Related 3">
+      <p>Black Sneakers</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
